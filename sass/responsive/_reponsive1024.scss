@@ -1,0 +1,126 @@
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        .login__register {
+            width: 100px;
+        }
+        .content {
+            &__left {
+                h1 {
+                    font-size: 50px;
+                }
+                &-send {
+                    margin-bottom: 20px;
+                }
+            }
+            &__right {
+                &-item {
+                    &-img{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                    &-imgBlur{
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        transform: scale(0.8);
+                    }
+                    
+                }
+                .nui {
+                    position: absolute;
+                    top: 317px;
+                    left: -131px;
+                    z-index: -6;
+                }
+                &-icon {
+                    &Diamond {
+                        top: 100px;
+                        left: 38px;
+                        animation: like 3s ease-in-out;
+                    }
+                    &Like {
+                        top: 136px;
+                        left: 286px;
+                        animation: like 3s ease-in-out;
+                    }
+                    &612 {
+                        top: 270px;
+                        left: 40px;
+                        animation: like 3s ease-in-out;
+                    }
+                    &Tym {
+                        top: 300px;
+                        left: 400px;
+                        animation: Tym 3s ease-in-out;
+                    }
+                    &599 {
+                        top: 400px;
+                        left: 390px;
+                        z-index: -1;
+                        animation: icon599 3s ease-in-out;
+                    }
+                    @keyframes icon599 {
+                        0% {
+                            opacity: 0;
+                            transform: translateX(400px);
+                            //   transform: scale(0.5);
+                        }
+
+                        50% {
+                            opacity: 0.5;
+                            transform: translateX(10px);
+                            //   transform: scale(0.8);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translate(0);
+                            //   transform: scale(1);
+                        }
+                    }
+                    @keyframes Tym {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-400px);
+                            //   transform: scale(0.5);
+                        }
+
+                        50% {
+                            opacity: 0.5;
+                            transform: translateY(-10px);
+                            //   transform: scale(0.8);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translate(0);
+                            //   transform: scale(1);
+                        }
+                    }
+                    @keyframes like {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-400px);
+                            //   transform: scale(0.5);
+                        }
+
+                        50% {
+                            opacity: 0.5;
+                            transform: translateY(-10px);
+                            //   transform: scale(0.8);
+                        }
+
+                        100% {
+                            opacity: 1;
+                            transform: translate(0);
+                            //   transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

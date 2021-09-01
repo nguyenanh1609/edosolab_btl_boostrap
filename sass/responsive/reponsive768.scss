@@ -1,0 +1,149 @@
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .curve,
+    .curve2 {
+        display: none;
+    }
+    .content {
+        &__left {
+            padding: 30px;
+            h1 {
+                font-size: 70px;
+                margin-bottom: 20px;
+            }
+            &-text {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            &-send {
+                margin-bottom: 30px;
+                input {
+                    width: 60%;
+                    font-size: 18px;
+                    &::placeholder {
+                        font-size: 16px;
+                    }
+                }
+                button {
+                    width: 40%;
+                }
+                svg {
+                    display: block;
+                }
+            }
+            &-sublike {
+                margin-bottom: 30px;
+                &-item {
+                    display: inline-block;
+                    h2 {
+                        text-align: left;
+                        margin: 0;
+                        font-size: 50px;
+                        letter-spacing: normal;
+                    }
+                    p {
+                        text-align: left;
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &__right {
+            padding: 0;
+            &-item-imgBlur {
+                top: 50px;
+            }
+            .nui {
+                position: absolute;
+                top: 317px;
+                left: -131px;
+                z-index: -6;
+            }
+            &-icon {
+                &Diamond {
+                    top: 29px;
+                    left: 73px;
+                    animation: like 3s ease-in-out;
+                }
+                &Like {
+                    top: 350px;
+                    left: 591px;
+                    animation: like 3s ease-in-out;
+                }
+                &612 {
+                    top: 150px;
+                    left: 16px;
+                    animation: like 3s ease-in-out;
+                }
+                &Tym {
+                    top: 20px;
+                    left: 384px;
+                    animation: Tym 3s ease-in-out;
+                }
+                &599 {
+                    top: 429px;
+                    left: 559px;
+                    z-index: -1;
+                    animation: icon599 3s ease-in-out;
+                }
+                @keyframes icon599 {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(400px);
+                        //   transform: scale(0.5);
+                    }
+
+                    50% {
+                        opacity: 0.5;
+                        transform: translateX(10px);
+                        //   transform: scale(0.8);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translate(0);
+                        //   transform: scale(1);
+                    }
+                }
+                @keyframes Tym {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-400px);
+                        //   transform: scale(0.5);
+                    }
+
+                    50% {
+                        opacity: 0.5;
+                        transform: translateY(-10px);
+                        //   transform: scale(0.8);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translate(0);
+                        //   transform: scale(1);
+                    }
+                }
+                @keyframes like {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(-400px);
+                        //   transform: scale(0.5);
+                    }
+
+                    50% {
+                        opacity: 0.5;
+                        transform: translateY(-10px);
+                        //   transform: scale(0.8);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translate(0);
+                        //   transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+}
